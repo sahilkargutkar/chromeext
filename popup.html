@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+                <html>
+                
+                <head>
+                 
+                    <link rel="stylesheet" href="fonts.css">
+                
+               
+                    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+                    <link rel="stylesheet" href="popup.css">
+                </head>
+                
+                <body>
+                  
+                    <header class='fixed'>
+                        <div class='line'></div>
+                        <img id="logo" class="responsive-img" src='img128x128.png' />
+                        <h6 id="title">Gmail Boards</h6>
+                         <i class="material-icons tiny"
+                                style="color: #dfd21a; vertical-align: text-top;"></p>
+                      
+                    </header>
+                
+                    <main>
+                        
+                        <div id="error-box" class='container hide'>
+                            <i class="material-icons medium left" style="vertical-align: middle;">error</i>
+                            <p id='error-message'></p>
+                        </div>
+                
+                      
+                        <div class="container authorize center hide">
+                            <br />
+                            <a id="authorize" class="waves-effect waves-light blue btn-small pulse scale-transition"><i
+                                    class="material-icons right"></i>Authorize</a>
+                            <p>Click on <b>Authorize</b> to allow permission<br />to <b>manage mailbox labels</b> of your Gmail account.
+                            </p>
+                        </div>
+                
+                       
+                        <div id="preloader" class='container center'>
+                            <br />
+                            <div class="preloader-wrapper big active">
+                                <div class="spinner-layer spinner-red-only">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                
+                      
+                        <div id="labels-ui" class="container hide">
+                            <ol class='o-sortable collection' id="labels_collection"></ol>
+                        </div>
+                    </main>
+                
+                   
+                    <footer class="page-footer fixed center">
+                        <div class='line'></div>
+                    </footer>
+                
+                   
+                    
+                    <script type="text/javascript" src="js/gapiclient.js"></script>
+                    <script type="text/javascript" src="js/popup.js"></script>
+                </body>
+                
+                </html>
+                
+       
+    </header>
+
+    
+    <main>
+      
+        <div id="error-box" class='container hide'>
+            <i class="material-icons medium left" style="vertical-align: middle;">error</i>
+            <p id='error-message'></p>
+        </div>
+
+        <div class="container authorize center hide">
+            <br />
+            <a id="authorize" class="waves-effect waves-light blue btn-small pulse scale-transition"><i
+                    class="material-icons right">Authorize</a>
+            <p>Click on <b>Authorize</b> to allow permission<br />to <b>manage mailbox labels</b> of your Gmail account.
+            </p>
+        </div>
+
+        <div id="preloader" class='container center'>
+            <br />
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+
+      
+        <div id="labels-ui" class="container hide">
+            <ol class='o-sortable collection' id="labels_collection"></ol>
+        </div>
+    </main>
+
+    
+    <footer class="page-footer fixed center">
+        <div class='line'></div>
+    </footer>
+
+   
+    <script type="text/javascript" src="js/gapiclient.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+</body>
+
+</html>
